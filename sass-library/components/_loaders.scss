@@ -1,0 +1,40 @@
+/* LOADER OPTIONS CLASS */
+.lds-dual-ring-props{
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-color: #21c59f #21c59f #21c59f #eaeaeacc;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.lds-dual-ring-xl:after{
+    width: 50px;
+    height: 50px;
+    @extend .lds-dual-ring-props;
+}  
+
+.lds-dual-ring-xm:after{
+    width: 40px;
+    height: 40px;
+    @extend .lds-dual-ring-props;
+}  
+
+.lds-dual-ring-lg:after{
+    width: 30px;
+    height: 30px;
+    @extend .lds-dual-ring-props;
+}  
+
+.lds-dual-ring-md:after{
+    width: 20px;
+    height: 20px;
+    @extend .lds-dual-ring-props;
+}
+
+.lds-dual-ring-sm:after{
+    width: 10px;
+    height: 10px;
+    @extend .lds-dual-ring-props;
+}

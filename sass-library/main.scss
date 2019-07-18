@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* Fonts */
+@import "base/typography";
+
+/* Third party packages. Import in each MF */
+// @import "~bootstrap/scss/bootstrap";
+
+/* Variables */
+@import "abstracts/variables";
+@import "abstracts/animations";
+@import "abstracts/colors";
+@import "abstracts/mixins";
+@import "abstracts/keyframes";
+
+/* Components */
+@import "components/forms";
+@import "components/loaders";
+@import "components/buttons";
+@import "components/popups";
+
+/* Reset */
+@import "base/reset";
+

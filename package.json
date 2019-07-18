@@ -1,0 +1,23 @@
+{
+  "name": "entrega-sass-library",
+  "version": "0.0.0",
+  "scripts": {
+    "build-css": "node-sass --include-path scss sass-library/main.scss   public/css/main.min.css --output-style compressed",
+    "build-o": "rm -rf dist && tsc"
+  },
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "tslib": "^1.9.0",
+    "zone.js": "~0.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "~8.9.4",
+    "codelyzer": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.15.0"
+  }
+}
