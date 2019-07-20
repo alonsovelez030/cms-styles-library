@@ -2,12 +2,14 @@
   "name": "entrega-sass-library",
   "version": "0.0.0",
   "scripts": {
-    "build-css": "node-sass --include-path scss sass-library/main.scss   public/css/main.min.css --output-style compressed",
-    "build-o": "rm -rf dist && tsc"
+    "sass:build": "node-sass --include-path scss sass-library/main.scss   public/css/main.min.css --output-style compressed"
   },
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "5.7.0",
+    "gulp-sass": "4.0.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
