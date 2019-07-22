@@ -14,3 +14,6 @@ hr{
     height: 20px;
     padding: 2px;
 }
+.bof-input{
+    max-width: 114px;
+}

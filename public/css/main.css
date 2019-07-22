@@ -30,6 +30,19 @@
 
 /* Variables */
 /* Components */
+.bof-input {
+  background-color: #EEF1F5;
+  border: 1px solid #EEF1F5;
+  border-radius: 2px;
+  padding: 3px 5px;
+  outline: 0px;
+  box-shadow: none;
+  font-family: 'Proxima Nova Alt Regular'; }
+  .bof-input::placeholder {
+    color: #9AA9B9; }
+  .bof-input:valid {
+    background-color: #fff; }
+
 /* LOADER OPTIONS CLASS */
 .lds-dual-ring-props, .lds-dual-ring-xl:after, .lds-dual-ring-xm:after, .lds-dual-ring-lg:after, .lds-dual-ring-md:after, .lds-dual-ring-sm:after {
   content: " ";
@@ -113,7 +126,8 @@
   position: relative;
   background: #ffffff;
   padding: 0;
-  font-size: 13px; }
+  font-size: 13px;
+  font-family: 'Proxima Nova Alt Regular'; }
 
 .bof-slide-toggle:hover {
   border-color: #d5d5d5; }
