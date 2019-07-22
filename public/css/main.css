@@ -8,7 +8,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  src: local("Proxima Nova Alt Bold"), url(../../fonts/Mark-Simonson-Proxima-Nova-Alt-Bold.woff) format("woff"); }
+  src: local("Proxima Nova Alt Bold"), url(https://cdn.statically.io/gh/alonsovelez030/boffice-styles-library/cedfb401/public/fonts/Mark-Simonson-Proxima-Nova-Alt-Bold.woff) format("woff"); }
 
 @font-face {
   font-family: 'Proxima Nova Alt Regular';
@@ -17,7 +17,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  src: local("Proxima Nova Alt Regular"), url(../../fonts/Mark-Simonson-Proxima-Nova-Alt-Regular.woff) format("woff"); }
+  src: local("Proxima Nova Alt Regular"), url(https://cdn.statically.io/gh/alonsovelez030/boffice-styles-library/cedfb401/public/fonts/Mark-Simonson-Proxima-Nova-Alt-Regular.woff) format("woff"); }
 
 @font-face {
   font-family: 'Proxima Nova Alt Light';
@@ -26,7 +26,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  src: local("Proxima Nova Alt Light"), url(../../fonts/Mark-Simonson-Proxima-Nova-Alt-Light.woff) format("woff"); }
+  src: local("Proxima Nova Alt Light"), url(https://cdn.statically.io/gh/alonsovelez030/boffice-styles-library/cedfb401/public/fonts/Mark-Simonson-Proxima-Nova-Alt-Light.woff) format("woff"); }
 
 /* Variables */
 /* Components */
@@ -71,9 +71,34 @@
     transition: .1s all linear; }
   .bof-btn:disabled, .bof-btn-block:disabled {
     background-color: #9AA9B9; }
+  .bof-btn.outline, .outline.bof-btn-block {
+    border: 1px solid #00DDCD;
+    background-color: #fff;
+    color: #00DDCD; }
+  .bof-btn.outline:hover, .outline.bof-btn-block:hover {
+    opacity: 1; }
 
 .bof-btn-block {
   width: 100%; }
+
+.bof-tooltip {
+  position: relative; }
+  .bof-tooltip span {
+    padding: 8px 15px;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    background-color: #56446F;
+    color: #fff;
+    font-family: 'Proxima Nova Alt Bold';
+    font-size: 13px; }
+  .bof-tooltip span:before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: -16px;
+    border: 8px solid;
+    border-color: transparent #56446F transparent transparent; }
 
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/

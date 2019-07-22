@@ -11,6 +11,14 @@
     &:disabled{
         background-color: $gray;
     }
+    &.outline {
+        border: 1px solid $light-green;
+        background-color: $white;
+        color: $light-green;
+    }
+    &.outline:hover {
+        opacity: 1;
+    }
 }
 
 .bof-btn-block{ width: 100%; @extend .bof-btn; }
