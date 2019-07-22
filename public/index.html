@@ -49,15 +49,42 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h1>Botones Principales</h1>
-                    <hr>
-                    <div class="buttons mt-4">
-                        <button class="bof-btn">bof-btn</button>
-                        <button class="bof-btn" disabled>bof-btn disabled</button>
-                        <button class="bof-btn outline">bof-btn outline</button>
-                        <button class="bof-btn-block mt-2">bof-btn-block</button>
-                        <button class="bof-btn-block mt-2" disabled>bof-btn-block disabled</button>
-                        <button class="bof-btn-block outline mt-2">bof-btn-block outline</button>
+                    <div>
+                        <h1>Botones Principales</h1>
+                        <hr class="mb-3">
+                        <span>
+                            Agregarle al botón el ancho que necesites, el padding y el tamaño de fuente
+                            Las clases se setean de la siguiente manera:<br>
+                            - <b>bof-btn [bof-p-outline:optional] [strench(bof-p-regular o bof-p-bold)]</b><br>
+                            - <b>bof-btn-block [bof-p-outline:optional] [strench(bof-p-regular o bof-p-bold)]</b><br>
+                            - <b>Botones disabled, agregar el disabled propertie</b>  
+                        </span>
+                        <div class="buttons mt-2">
+                            <button class="bof-btn bof-p-bold">bof-btn bold</button>
+                            <button class="bof-btn bof-p-regular" disabled>bof-btn disabled regular</button>
+                            <button class="bof-btn bof-p-outline bof-p-bold">bof-btn outline bold</button>
+                            <button class="bof-btn-block mt-2">bof-btn-block</button>
+                            <button class="bof-btn-block mt-2" disabled>bof-btn-block disabled</button>
+                            <button class="bof-btn-block bof-p-outline mt-2">bof-btn-block outline</button>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h2 class="bof-c-gray">Slide Toggle</h2>
+                        <hr>
+                        <div class="buttons mt-4">
+                            <fieldset class="bof-slide-toggle">
+                                <input class="input-switch" id="switch" type="checkbox"/>
+                                <label for="switch"></label>
+                                <span class="switch-bg"></span>
+                                <span class="switch-labels" data-on="Flexible" data-off="Flat"></span>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h1>Input</h1>
+                        <hr>
+                        <div class="mt-4">
+                        </div>
                     </div>
                 </div>
             </div>

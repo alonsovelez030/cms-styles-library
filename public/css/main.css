@@ -66,17 +66,22 @@
   color: #fff;
   border: 0px;
   border-radius: 2px; }
+  .bof-btn.bof-p-regular, .bof-p-regular.bof-btn-block {
+    font-family: 'Proxima Nova Alt Regular'; }
+  .bof-btn.bof-p-bold, .bof-p-bold.bof-btn-block {
+    font-family: 'Proxima Nova Alt Bold'; }
+  .bof-btn.bof-p-outline, .bof-p-outline.bof-btn-block {
+    border: 1px solid #00DDCD;
+    background-color: #fff;
+    color: #00DDCD; }
+  .bof-btn.bof-p-outline:hover, .bof-p-outline.bof-btn-block:hover {
+    opacity: 1; }
   .bof-btn:hover, .bof-btn-block:hover {
     opacity: 0.5;
     transition: .1s all linear; }
   .bof-btn:disabled, .bof-btn-block:disabled {
+    opacity: 1;
     background-color: #9AA9B9; }
-  .bof-btn.outline, .outline.bof-btn-block {
-    border: 1px solid #00DDCD;
-    background-color: #fff;
-    color: #00DDCD; }
-  .bof-btn.outline:hover, .outline.bof-btn-block:hover {
-    opacity: 1; }
 
 .bof-btn-block {
   width: 100%; }
@@ -99,6 +104,82 @@
     left: -16px;
     border: 8px solid;
     border-color: transparent #56446F transparent transparent; }
+
+.bof-slide-toggle {
+  width: 168px;
+  height: 36px;
+  border-radius: 18px;
+  border: solid 1px #eef1f5;
+  position: relative;
+  background: #ffffff;
+  padding: 0;
+  font-size: 13px; }
+
+.bof-slide-toggle:hover {
+  border-color: #d5d5d5; }
+
+.bof-slide-toggle input.input-switch {
+  position: absolute;
+  opacity: 0;
+  z-index: -10; }
+
+.bof-slide-toggle span.switch-bg {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  width: 80px;
+  height: 29px;
+  border-radius: 18px;
+  background-color: #00ddcd;
+  top: 3px; }
+
+.bof-slide-toggle span.switch-labels {
+  position: absolute;
+  z-index: 1;
+  width: inherit;
+  height: inherit; }
+
+.bof-slide-toggle span.switch-labels:before, .bof-slide-toggle span.switch-labels:after {
+  height: 40px;
+  width: 50%;
+  line-height: 36px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  text-align: center; }
+
+.bof-slide-toggle span.switch-labels:before {
+  content: attr(data-on);
+  left: 0;
+  position: absolute;
+  color: #1F2532; }
+
+.bof-slide-toggle span.switch-labels:after {
+  content: attr(data-off);
+  position: absolute;
+  right: 7px;
+  color: #fff; }
+
+.bof-slide-toggle label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer; }
+
+.bof-slide-toggle .input-switch:checked ~ .switch-bg {
+  left: 4px;
+  background-color: #00ddcd; }
+
+.bof-slide-toggle .input-switch:checked ~ .switch-labels:before {
+  color: #fff; }
+
+.bof-slide-toggle .input-switch:checked ~ .switch-labels:after {
+  color: #1F2532; }
 
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/

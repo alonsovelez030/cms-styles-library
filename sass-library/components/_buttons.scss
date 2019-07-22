@@ -4,20 +4,28 @@
     color: $white;
     border: 0px;
     border-radius: 2px;
+
+    &.bof-p-regular{
+        font-family: 'Proxima Nova Alt Regular';
+    }
+    &.bof-p-bold{
+        font-family: 'Proxima Nova Alt Bold';
+    }
+    &.bof-p-outline {
+        border: 1px solid $light-green;
+        background-color: $white;
+        color: $light-green;
+    }
+    &.bof-p-outline:hover {
+        opacity: 1;
+    }
     &:hover{
         opacity: 0.5;
         transition: .1s all linear;
     }
     &:disabled{
-        background-color: $gray;
-    }
-    &.outline {
-        border: 1px solid $light-green;
-        background-color: $white;
-        color: $light-green;
-    }
-    &.outline:hover {
         opacity: 1;
+        background-color: $gray;
     }
 }
 
