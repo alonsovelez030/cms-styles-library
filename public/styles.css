@@ -1,0 +1,16 @@
+h1{
+    font-size: 25px;
+    color: #6186ff;
+    font-family: 'Proxima Nova Alt Bold'
+}
+hr{
+    border: 1px solid #e6ebf1;
+    width: 60px;
+    margin: 7px 0 0 0;
+}
+
+.bg-box{
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+}

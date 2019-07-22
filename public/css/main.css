@@ -1,6 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
 /* Fonts */
-/* Third party packages. Import in each MF */
+@font-face {
+  font-family: 'Proxima Nova Alt Bold';
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  src: local("Proxima Nova Alt Bold"), url(../../fonts/Mark-Simonson-Proxima-Nova-Alt-Bold.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Proxima Nova Alt Regular';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  src: local("Proxima Nova Alt Regular"), url(../../fonts/Mark-Simonson-Proxima-Nova-Alt-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: 'Proxima Nova Alt Light';
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  src: local("Proxima Nova Alt Light"), url(../../fonts/Mark-Simonson-Proxima-Nova-Alt-Light.woff) format("woff"); }
+
 /* Variables */
 /* Components */
 /* LOADER OPTIONS CLASS */
@@ -32,6 +59,21 @@
 .lds-dual-ring-sm:after {
   width: 10px;
   height: 10px; }
+
+.bof-btn, .bof-btn-block {
+  padding: 5px;
+  background-color: #00DDCD;
+  color: #fff;
+  border: 0px;
+  border-radius: 2px; }
+  .bof-btn:hover, .bof-btn-block:hover {
+    opacity: 0.5;
+    transition: .1s all linear; }
+  .bof-btn:disabled, .bof-btn-block:disabled {
+    background-color: #9AA9B9; }
+
+.bof-btn-block {
+  width: 100%; }
 
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -70,7 +112,8 @@ body {
   border: 0;
   padding: 0;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  font-family: "Proxima Nova Alt Light"; }
 
 ol, ul {
   list-style: none; }
@@ -348,3 +391,59 @@ fieldset {
 
 textarea {
   resize: vertical; }
+
+/* Color Classes */
+.bof-c-white {
+  color: #fff; }
+
+.bof-c-purple {
+  color: #56446F; }
+
+.bof-bc-purple {
+  background-color: #56446F; }
+
+.bof-c-gray {
+  color: #9AA9B9; }
+
+.bof-bc-gray {
+  background-color: #9AA9B9; }
+
+.bof-c-light-green {
+  color: #00DDCD; }
+
+.bof-bc-light-green {
+  background-color: #00DDCD; }
+
+.bof-c-light-black {
+  color: #1F2532; }
+
+.bof-bc-light-black {
+  background-color: #1F2532; }
+
+.bof-c-dark-green {
+  color: #15B597; }
+
+.bof-bc-dark-green {
+  background-color: #15B597; }
+
+.bof-c-flat-red {
+  color: #F33959; }
+
+.bof-bc-flat-red {
+  background-color: #F33959; }
+
+.bof-c-light-gray {
+  color: #EEF1F5; }
+
+.bof-bc-light-gray {
+  background-color: #EEF1F5; }
+
+/* Font Classes */
+.bof-font-nova-bold {
+  font-family: 'Proxima Nova Alt Bold'; }
+
+.bof-font-nova-regular {
+  font-family: 'Proxima Nova Alt Regular'; }
+
+.bof-font-nova-light {
+  font-family: 'Proxima Nova Alt Light'; }

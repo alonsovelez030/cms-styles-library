@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+
 /* Fonts */
 @import "base/typography";
-
-/* Third party packages. Import in each MF */
-// @import "~bootstrap/scss/bootstrap";
 
 /* Variables */
 @import "abstracts/variables";
@@ -21,3 +20,24 @@
 /* Reset */
 @import "base/reset";
 
+/* Color Classes */
+.bof-c-white { color: $white; }
+.bof-c-purple{ color: $purple }
+.bof-bc-purple{ background-color: $purple }
+.bof-c-gray{ color: $gray }
+.bof-bc-gray{ background-color: $gray }
+.bof-c-light-green{ color: $light-green }
+.bof-bc-light-green{ background-color: $light-green }
+.bof-c-light-black{ color: $light-black }
+.bof-bc-light-black{ background-color: $light-black }
+.bof-c-dark-green{ color: $dark-green }
+.bof-bc-dark-green{ background-color: $dark-green }
+.bof-c-flat-red{ color: $flat-red }
+.bof-bc-flat-red{ background-color: $flat-red }
+.bof-c-light-gray{ color: $light-gray }
+.bof-bc-light-gray{ background-color: $light-gray }
+
+/* Font Classes */
+.bof-font-nova-bold { font-family: 'Proxima Nova Alt Bold'; }
+.bof-font-nova-regular { font-family: 'Proxima Nova Alt Regular'; }
+.bof-font-nova-light { font-family: 'Proxima Nova Alt Light'; }
