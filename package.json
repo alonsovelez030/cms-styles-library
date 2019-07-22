@@ -1,10 +1,10 @@
 {
-  "name": "entrega-sass-library",
-  "version": "0.0.0",
+  "name": "boffice-sass-library",
+  "version": "1.0.0",
   "scripts": {
     "sass:build": "node-sass --include-path scss sass-library/main.scss   public/css/main.min.css --output-style compressed"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gulp": "^3.9.1",
