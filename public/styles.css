@@ -17,3 +17,7 @@ hr{
 .bof-input{
     max-width: 114px;
 }
+
+.bof-modal{
+    display: none;
+}
