@@ -17,6 +17,7 @@
 @import "components/buttons";
 @import "components/popups";
 @import "components/slide_toggle";
+@import "components/modals";
 
 /* Reset */
 @import "base/reset";
@@ -42,3 +43,12 @@
 .bof-font-nova-bold { font-family: 'Proxima Nova Alt Bold'; }
 .bof-font-nova-regular { font-family: 'Proxima Nova Alt Regular'; }
 .bof-font-nova-light { font-family: 'Proxima Nova Alt Light'; }
+
+/* Span Status */
+.bof-span{
+    font-family: 'Proxima Nova Alt Regular';
+    font-size: 13px;
+    &.bof-p-success{ color: $dark-green;}
+    &.bof-p-error{ color: $flat-red;}
+    &.bof-p-pending{ color: $gray;}
+}

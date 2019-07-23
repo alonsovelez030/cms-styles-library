@@ -30,6 +30,18 @@
 
 /* Variables */
 /* Components */
+input:not([type]), input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea,
 .bof-input {
   background-color: #EEF1F5;
   border: 1px solid #EEF1F5;
@@ -38,8 +50,32 @@
   outline: 0px;
   box-shadow: none;
   font-family: 'Proxima Nova Alt Regular'; }
+  input:not([type])::placeholder, input[type=text]:not(.browser-default)::placeholder,
+  input[type=password]:not(.browser-default)::placeholder,
+  input[type=email]:not(.browser-default)::placeholder,
+  input[type=url]:not(.browser-default)::placeholder,
+  input[type=time]:not(.browser-default)::placeholder,
+  input[type=date]:not(.browser-default)::placeholder,
+  input[type=datetime]:not(.browser-default)::placeholder,
+  input[type=datetime-local]:not(.browser-default)::placeholder,
+  input[type=tel]:not(.browser-default)::placeholder,
+  input[type=number]:not(.browser-default)::placeholder,
+  input[type=search]:not(.browser-default)::placeholder,
+  textarea.materialize-textarea::placeholder,
   .bof-input::placeholder {
     color: #9AA9B9; }
+  input:not([type]):valid, input[type=text]:not(.browser-default):valid,
+  input[type=password]:not(.browser-default):valid,
+  input[type=email]:not(.browser-default):valid,
+  input[type=url]:not(.browser-default):valid,
+  input[type=time]:not(.browser-default):valid,
+  input[type=date]:not(.browser-default):valid,
+  input[type=datetime]:not(.browser-default):valid,
+  input[type=datetime-local]:not(.browser-default):valid,
+  input[type=tel]:not(.browser-default):valid,
+  input[type=number]:not(.browser-default):valid,
+  input[type=search]:not(.browser-default):valid,
+  textarea.materialize-textarea:valid,
   .bof-input:valid {
     background-color: #fff; }
 
@@ -194,6 +230,41 @@
 
 .bof-slide-toggle .input-switch:checked ~ .switch-labels:after {
   color: #1F2532; }
+
+.bof-modal {
+  overflow: auto;
+  display: block; }
+  .bof-modal .bof-modal-shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #27191999;
+    z-index: 100; }
+  .bof-modal .bof-modal-container {
+    max-width: 410px;
+    z-index: 101; }
+    .bof-modal .bof-modal-container .modal-content {
+      padding: 34px 30px;
+      border: none; }
+      .bof-modal .bof-modal-container .modal-content .modal-header {
+        padding: 0;
+        border-bottom: none;
+        display: block;
+        align-items: normal; }
+        .bof-modal .bof-modal-container .modal-content .modal-header .close-form {
+          position: absolute;
+          right: 22px;
+          top: 22px;
+          border-radius: 100rem;
+          background: #f7f7f7;
+          padding: 5px;
+          cursor: pointer; }
+      .bof-modal .bof-modal-container .modal-content .modal-body {
+        padding: 0px; }
 
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -567,3 +638,14 @@ textarea {
 
 .bof-font-nova-light {
   font-family: 'Proxima Nova Alt Light'; }
+
+/* Span Status */
+.bof-span {
+  font-family: 'Proxima Nova Alt Regular';
+  font-size: 13px; }
+  .bof-span.bof-p-success {
+    color: #15B597; }
+  .bof-span.bof-p-error {
+    color: #F33959; }
+  .bof-span.bof-p-pending {
+    color: #9AA9B9; }

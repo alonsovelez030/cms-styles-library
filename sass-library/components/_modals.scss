@@ -1,0 +1,42 @@
+.bof-modal{
+    overflow: auto; 
+    display:block;
+
+    .bof-modal-shadow{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #27191999;
+        z-index: 100;
+    }
+    .bof-modal-container{
+        max-width: 410px;
+        z-index: 101;
+        .modal-content{
+            padding: 34px 30px;
+            border:none;
+            .modal-header{
+                padding: 0;
+                border-bottom: none;
+                display: block;
+                align-items: normal;
+                .close-form{
+                    position: absolute;
+                    right: 22px;
+                    top: 22px;
+                    border-radius: 100rem;
+                    background: #f7f7f7;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+            }
+            .modal-body{
+                padding: 0px;
+            }
+        }
+    }
+}
