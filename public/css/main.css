@@ -114,11 +114,8 @@ textarea.materialize-textarea,
   background-color: #00DDCD;
   color: #fff;
   border: 0px;
-  border-radius: 2px; }
-  .bof-btn.bof-p-regular, .bof-p-regular.bof-btn-block {
-    font-family: 'Proxima Nova Alt Regular'; }
-  .bof-btn.bof-p-bold, .bof-p-bold.bof-btn-block {
-    font-family: 'Proxima Nova Alt Bold'; }
+  border-radius: 2px;
+  font-family: 'Proxima Nova Alt Regular'; }
   .bof-btn.bof-p-outline, .bof-p-outline.bof-btn-block {
     border: 1px solid #00DDCD;
     background-color: #fff;
