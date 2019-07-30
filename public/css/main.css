@@ -80,6 +80,12 @@ textarea.materialize-textarea,
     background-color: #fff; }
 
 /* LOADER OPTIONS CLASS */
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 .lds-dual-ring-props, .lds-dual-ring-xl:after, .lds-dual-ring-xm:after, .lds-dual-ring-lg:after, .lds-dual-ring-md:after, .lds-dual-ring-sm:after {
   content: " ";
   display: block;
