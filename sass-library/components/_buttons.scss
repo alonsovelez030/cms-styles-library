@@ -1,26 +1,12 @@
-.bof-btn {
-    padding: 5px;
-    background-color: $light-green;
-    color: $white;
-    border: 0px;
-    border-radius: 2px;
-    font-family: 'Proxima Nova Alt Regular';
-
-    &.bof-p-outline {
-        border: 1px solid $light-green;
-        background-color: $white;
-        color: $light-green;
-    }
-    &.bof-p-outline:hover { opacity: 1; }
-
-    &:hover{
-        opacity: 0.5;
-        transition: .1s all linear;
-    }
-    &:disabled{
-        opacity: 1;
-        background-color: $gray;
-    }
+.btn-continue {
+  position: absolute;
+  right: 44px;
+  bottom: 0;
+  padding: 0 126px;
+  background-color: #FF2426;
+  color: #ffffff;
 }
 
-.bof-btn-block{ width: 100%; @extend .bof-btn; }
+.btn-disable {
+  background-color: #9faab7 !important;
+}

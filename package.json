@@ -1,5 +1,5 @@
 {
-  "name": "boffice-sass-library",
+  "name": "cms-styles-library",
   "version": "1.0.0",
   "scripts": {
     "sass:build": "node-sass --include-path scss sass-library/main.scss   public/css/main.min.css --output-style compressed"

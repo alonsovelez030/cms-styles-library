@@ -1,0 +1,9 @@
+@mixin font-guide($font-size,$color,$strench){
+    font-size: $font-size;
+	  font-weight: $strench;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color:$color;
+}
