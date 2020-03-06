@@ -1,4 +1,19 @@
 
+#search-content{
+    input{
+        display: block;
+        padding: 0px 10px;
+        border: 1px solid #0984ff00;
+        background-color: #f7f7f7;
+        font-size: 14px;
+        color: #333333;
+        height: 40px;
+        border-radius: 8px 0 0 8px;
+        box-sizing: unset;
+        margin: 0;
+    }
+}
+
 nz-input-group {
     .ant-input{
         display: block;
